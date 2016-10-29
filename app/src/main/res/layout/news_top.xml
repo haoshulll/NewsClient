@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp" >
+
+        <com.myapp.newsclient.widget.HorizontalScrollViewPager
+            android:id="@+id/news_list_pic_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/news_list_pic_title"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:background="#33000000"
+            android:gravity="center_vertical"
+            android:lines="1"
+            android:paddingLeft="10dp"
+            android:text="内容的描述title"
+            android:textColor="@android:color/white" />
+
+        <!-- 装点的容器 -->
+
+        <LinearLayout
+            android:id="@+id/news_list_point_container"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

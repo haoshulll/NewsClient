@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- 上部区域 -->
+
+    <com.myapp.newsclient.widget.NoScrollViewPager
+        android:layout_width="match_parent"
+        android:id="@+id/content_pager"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+    </com.myapp.newsclient.widget.NoScrollViewPager>
+
+    <!-- 下部区域 -->
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/content_rg"
+        android:background="@drawable/bottom_tab_bg"
+        android:orientation="horizontal"
+        >
+        <RadioButton
+            android:id="@+id/tab_home"
+            style="@style/radio_tab"
+            android:drawableTop="@drawable/tab_home_bg"
+            android:text="@string/tab_home_text" />
+
+        <RadioButton
+            android:id="@+id/tab_newscenter"
+            style="@style/radio_tab"
+            android:drawableTop="@drawable/tab_newscenter_bg"
+            android:text="@string/tab_newscenter_text" />
+
+        <RadioButton
+            android:id="@+id/tab_smartservice"
+            style="@style/radio_tab"
+            android:drawableTop="@drawable/tab_smartservice_bg"
+            android:text="@string/tab_smartservice_text" />
+
+        <RadioButton
+            android:id="@+id/tab_gov"
+            style="@style/radio_tab"
+            android:drawableTop="@drawable/tab_gov_bg"
+            android:text="@string/tab_gov_text" />
+
+        <RadioButton
+            android:id="@+id/tab_setting"
+            style="@style/radio_tab"
+            android:drawableTop="@drawable/tab_setting_bg"
+            android:text="@string/tab_setting_text" />
+
+    </RadioGroup>
+</LinearLayout>

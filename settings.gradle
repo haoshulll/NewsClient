@@ -1,0 +1,2 @@
+include ':app', ':Sliding-library'
+include ':ViewPagerIndicator_library'

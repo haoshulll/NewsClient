@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- enable -->
+    <item android:drawable="@drawable/menu_arr_select" android:state_enabled="true"/>
+    <!-- disable -->
+    <item android:drawable="@drawable/menu_arr_normal" android:state_enabled="false"/>
+
+</selector>
